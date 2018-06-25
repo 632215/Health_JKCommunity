@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        health {
+            keyAlias 'health'
+            keyPassword 'health'
+            storeFile file('F:/jinke-work/Health_JKCommunity/app/keystory/health_keystory.jks')
+            storePassword 'health'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "jinke.com.tv_health_jkcommunity"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86', 'arm64-v8a'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "a88338070945c35afeb02a38", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:leanback-v17:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //    compile 'com.bulong.rudeness:rudeness:latest.release@aar'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    //    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile 'cn.jiguang.sdk:jpush:3.1.1'
+    compile 'cn.jiguang.sdk:jcore:1.1.9'
+}

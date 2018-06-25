@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:visibility="gone" />
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/mp_line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="600pt"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/base_dimen_200"
+        android:layout_height="wrap_content">
+
+        <jinke.com.tv_health_jkcommunity.ui.weight.ServiceScaleView
+            android:id="@+id/scale_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_bmi_cur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ll_bmi2"
+        android:layout_alignStart="@+id/ll_bmi2"
+        android:src="@mipmap/icon_green_arrow" />
+
+    <LinearLayout
+        android:id="@+id/ll_bmi1"
+        android:layout_width="@dimen/base_dimen_144"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_bmi_cur"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_12"
+            android:src="@mipmap/icon_bmi_line1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/base_dimen_4"
+            android:text="正常"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bmi2"
+        android:layout_width="@dimen/base_dimen_112"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_bmi_cur"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:layout_toEndOf="@+id/ll_bmi1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_12"
+            android:src="@mipmap/icon_bmi_line2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/base_dimen_4"
+            android:text="正常"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bmi3"
+        android:layout_width="@dimen/base_dimen_112"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_bmi_cur"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:layout_toEndOf="@+id/ll_bmi2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_12"
+            android:background="@mipmap/icon_bmi_line3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/base_dimen_4"
+            android:text="超重"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bmi4"
+        android:layout_width="@dimen/base_dimen_112"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_bmi_cur"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:layout_toEndOf="@+id/ll_bmi3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base_dimen_12"
+            android:background="@mipmap/icon_bmi_line4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/base_dimen_4"
+            android:text="肥胖"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bmi5"
+        android:layout_width="@dimen/base_dimen_176"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_bmi_cur"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:layout_toEndOf="@+id/ll_bmi4"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_12"
+            android:background="@mipmap/icon_bmi_line5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/base_dimen_4"
+            android:text="重度肥胖"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bmi6"
+        android:layout_width="@dimen/base_dimen_242"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_bmi_cur"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:layout_toEndOf="@+id/ll_bmi5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_12"
+            android:background="@mipmap/icon_bmi_line6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/base_dimen_4"
+            android:text="极重度肥胖"
+            android:textSize="8sp" />
+    </LinearLayout>
+</RelativeLayout>

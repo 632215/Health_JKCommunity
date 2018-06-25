@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="horizontal"
+    android:padding="@dimen/base_dimen_30">
+
+    <RelativeLayout
+        android:layout_width="@dimen/base_dimen_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tx_result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_17"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="基础信息"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/img_connect_index"
+            android:layout_toEndOf="@+id/tx_result_title"
+            android:layout_marginLeft="@dimen/base_dimen_18"
+            android:src="@drawable/circle_blue"
+            android:layout_alignTop="@+id/tx_result_title"
+            android:layout_alignBaseline="@+id/tx_result_title"
+            android:layout_width="@dimen/base_dimen_18"
+            android:layout_height="@dimen/base_dimen_18"/>
+
+        <ImageView
+            android:id="@+id/img_heart_index"
+            android:layout_toEndOf="@+id/img_connect_index"
+            android:layout_marginLeft="@dimen/base_dimen_18"
+            android:src="@drawable/circle_green"
+            android:layout_alignTop="@+id/tx_result_title"
+            android:layout_alignBaseline="@+id/tx_result_title"
+            android:layout_width="@dimen/base_dimen_18"
+            android:layout_height="@dimen/base_dimen_18"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_result_title"
+            android:background="@mipmap/icon_man_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tx_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_34"
+                android:layout_marginTop="@dimen/base_dimen_34"
+                android:singleLine="true"
+                android:text="ID"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="ID457963" />
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_34"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:singleLine="true"
+                android:text="姓名："
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="姓名：李某某" />
+
+            <TextView
+                android:id="@+id/tx_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_34"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:singleLine="true"
+                android:text="性别："
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="性别：男" />
+
+            <TextView
+                android:id="@+id/tx_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_34"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:singleLine="true"
+                android:text="年龄："
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="年龄：22" />
+
+            <TextView
+                android:id="@+id/tx_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_34"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:singleLine="true"
+                android:text="地址："
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="地址：金科十年城45234" />
+
+            <TextView
+                android:id="@+id/tx_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_34"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:singleLine="true"
+                android:text="建档日期："
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="建档日期：2017.4.23" />
+
+            <ImageView
+                android:id="@+id/image_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_result_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/base_dimen_10"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:src="@mipmap/icon_man" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/base_dimen_0"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/tx_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_17"
+            android:text="体检结果"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_info_title"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/base_dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/base_dimen_5"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image_bmi"
+                    android:layout_width="@dimen/base_dimen_60"
+                    android:layout_height="@dimen/base_dimen_60"
+                    android:layout_alignBottom="@+id/tx_bmi"
+                    android:layout_alignTop="@+id/tx_bmi"
+                    android:src="@mipmap/icon_bmi" />
+
+                <TextView
+                    android:id="@+id/tx_bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/image_bmi"
+                    android:paddingStart="@dimen/base_dimen_10"
+                    android:text="BMI"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <View
+                    android:id="@+id/view_bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:layout_below="@+id/tx_bmi"
+                    android:layout_marginLeft="@dimen/base_dimen_6"
+                    android:layout_marginRight="@dimen/base_dimen_6"
+                    android:layout_marginTop="@dimen/base_dimen_16"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_bmi"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/tx_height_weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--/--"
+                            android:textColor="@color/text_blue_color"
+                            android:textSize="28sp"
+                            tools:text="--/--" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tx_height_weight"
+                            android:layout_below="@+id/tx_height_weight"
+                            android:gravity="center_horizontal"
+                            android:text="身高/体重"
+                            android:singleLine="true"
+                            android:textSize="14sp"
+                            tools:text="身高/体重" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_depart_pading_left_right">
+
+                        <TextView
+                            android:id="@+id/tx_bmi_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:text="--"
+                            android:textColor="@color/text_green_color"
+                            android:textSize="28sp"
+                            tools:text="--" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tx_bmi_value"
+                            android:layout_centerHorizontal="true"
+                            android:text="BMI"
+                            android:textSize="14sp"
+                            tools:text="BMI" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tx_bmi_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:text="--/--"
+                            android:textColor="@color/date_color"
+                            android:textSize="28sp"
+                            tools:text="--/--" />
+
+                        <TextView
+                            android:id="@+id/tx_bmi_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tx_bmi_date"
+                            android:layout_centerHorizontal="true"
+                            android:text="--:--"
+                            android:textColor="@color/date_color"
+                            android:textSize="14sp"
+                            tools:text="--:--" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_bmi_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/ll_bmi"
+                    android:src="@mipmap/icon_bmi_1" />
+
+                <TextView
+                    android:id="@+id/tx_bmi_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_bmi_index"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:drawableLeft="@drawable/shape_square"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:text="历史记录"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_bmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_250"
+                    android:layout_below="@+id/tx_bmi_history"
+                    android:layout_marginTop="@dimen/base_dimen_10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/base_dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_5"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image_blood_church"
+                    android:layout_width="@dimen/base_dimen_60"
+                    android:layout_height="@dimen/base_dimen_60"
+                    android:layout_alignBottom="@+id/tx_blood_church"
+                    android:layout_alignTop="@+id/tx_blood_church"
+                    android:src="@mipmap/icon_blood_church" />
+
+                <TextView
+                    android:id="@+id/tx_blood_church"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/image_blood_church"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/base_dimen_10"
+                    android:text="血糖"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <View
+                    android:id="@+id/view_blood_church"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:layout_below="@+id/tx_blood_church"
+                    android:layout_marginLeft="@dimen/base_dimen_6"
+                    android:layout_marginRight="@dimen/base_dimen_6"
+                    android:layout_marginTop="@dimen/base_dimen_16"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_blood_church"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_blood_church"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/tx_blood_church_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="@color/text_blue_color"
+                            android:textSize="28sp"
+                            tools:text="--" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tx_blood_church_value"
+                            android:layout_below="@+id/tx_blood_church_value"
+                            android:gravity="center_horizontal"
+                            android:text="血糖"
+                            android:textSize="14sp"
+                            tools:text="血糖" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/tx_blood_church_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:text="--/--"
+                            android:textColor="@color/date_color"
+                            android:textSize="28sp"
+                            tools:text="--/--" />
+
+                        <TextView
+                            android:id="@+id/tx_blood_church_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tx_blood_church_date"
+                            android:layout_centerHorizontal="true"
+                            android:text="--:--"
+                            android:textColor="@color/date_color"
+                            android:textSize="14sp"
+                            tools:text="--:--" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_blood_church_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/ll_blood_church"
+                    android:src="@mipmap/icon_church_1" />
+
+                <TextView
+                    android:id="@+id/tx_blood_church_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_blood_church_index"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:drawableLeft="@drawable/shape_square"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:text="历史记录"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_blood_church"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_250"
+                    android:layout_below="@+id/tx_blood_church_history"
+                    android:layout_marginTop="@dimen/base_dimen_10"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_top"
+            android:layout_marginTop="@dimen/base_dimen_50"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/base_dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/base_dimen_5"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image_blood_oxygen"
+                    android:layout_width="@dimen/base_dimen_60"
+                    android:layout_height="@dimen/base_dimen_60"
+                    android:layout_alignBottom="@+id/tx_blood_oxygen"
+                    android:layout_alignTop="@+id/tx_blood_oxygen"
+                    android:src="@mipmap/icon_blood_oxygen" />
+
+                <TextView
+                    android:id="@+id/tx_blood_oxygen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/base_dimen_10"
+                    android:layout_toEndOf="@+id/image_blood_oxygen"
+                    android:gravity="center_vertical"
+                    android:text="血氧"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <View
+                    android:id="@+id/view_blood_oxygen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:layout_below="@+id/tx_blood_oxygen"
+                    android:layout_marginLeft="@dimen/base_dimen_6"
+                    android:layout_marginRight="@dimen/base_dimen_6"
+                    android:layout_marginTop="@dimen/base_dimen_16"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_blood_oxygen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_blood_oxygen"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/tx_blood_oxygen_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--%"
+                            android:textColor="@color/text_blue_color"
+                            android:textSize="28sp"
+                            tools:text="--%" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/tx_blood_oxygen_value"
+                            android:layout_alignStart="@+id/tx_blood_oxygen_value"
+                            android:layout_below="@+id/tx_blood_oxygen_value"
+                            android:gravity="center_horizontal"
+                            android:text="血氧"
+                            android:textSize="14sp"
+                            tools:text="血氧" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_depart_pading_left_right">
+
+                        <TextView
+                            android:id="@+id/tx_heart_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:text="--"
+                            android:textColor="@color/text_green_color"
+                            android:textSize="28sp"
+                            tools:text="--" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tx_heart_rate"
+                            android:layout_centerHorizontal="true"
+                            android:text="心率"
+                            android:textSize="14sp"
+                            tools:text="心率" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tx_blood_oxygen_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:text="--/--"
+                            android:textColor="@color/date_color"
+                            android:textSize="28sp"
+                            tools:text="--/--" />
+
+                        <TextView
+                            android:id="@+id/tx_blood_oxygen_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tx_blood_oxygen_date"
+                            android:layout_centerHorizontal="true"
+                            android:text="--:--"
+                            android:textColor="@color/date_color"
+                            android:textSize="14sp"
+                            tools:text="--:--" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_blood_oxygen_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/ll_blood_oxygen"
+                    android:layout_marginTop="@dimen/base_dimen_4"
+                    android:src="@mipmap/icon_oxygen_1" />
+
+                <TextView
+                    android:id="@+id/tx_blood_oxygen_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_blood_oxygen_index"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:drawableLeft="@drawable/shape_square"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:text="历史记录"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_blood_oxygen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_250"
+                    android:layout_below="@+id/tx_blood_oxygen_history"
+                    android:layout_marginTop="@dimen/base_dimen_10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/base_dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_5"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image_blood_pressure"
+                    android:layout_width="@dimen/base_dimen_60"
+                    android:layout_height="@dimen/base_dimen_60"
+                    android:layout_alignBottom="@+id/tx_blood_pressure"
+                    android:layout_alignTop="@+id/tx_blood_pressure"
+                    android:src="@mipmap/icon_blood_pressure" />
+
+                <TextView
+                    android:id="@+id/tx_blood_pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/base_dimen_10"
+                    android:layout_toEndOf="@+id/image_blood_pressure"
+                    android:gravity="center_vertical"
+                    android:text="血压"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <View
+                    android:id="@+id/view_blood_pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:layout_below="@+id/tx_blood_pressure"
+                    android:layout_marginLeft="@dimen/base_dimen_6"
+                    android:layout_marginRight="@dimen/base_dimen_6"
+                    android:layout_marginTop="@dimen/base_dimen_16"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_blood_pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_blood_pressure"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/tx_blood_pressure_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="--/--"
+                            android:textColor="@color/text_blue_color"
+                            android:textSize="28sp"
+                            tools:text="--/--" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tx_blood_pressure_value"
+                            android:layout_below="@+id/tx_blood_pressure_value"
+                            android:gravity="center_horizontal"
+                            android:text="血压"
+                            android:textSize="14sp"
+                            tools:text="血压" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_depart_pading_left_right">
+
+                        <TextView
+                            android:id="@+id/tx_pressure_heart_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:text="--"
+                            android:textColor="@color/text_green_color"
+                            android:textSize="28sp"
+                            tools:text="--" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tx_pressure_heart_rate"
+                            android:layout_centerHorizontal="true"
+                            android:text="心率"
+                            android:textSize="14sp"
+                            tools:text="心率" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/base_dimen_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/base_dimen_5"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/tx_blood_pressure_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:text="--/--"
+                            android:textColor="@color/date_color"
+                            android:textSize="28sp"
+                            tools:text="--/--" />
+
+                        <TextView
+                            android:id="@+id/tx_blood_pressure_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tx_blood_pressure_date"
+                            android:layout_centerHorizontal="true"
+                            android:text="--:--"
+                            android:textColor="@color/date_color"
+                            android:textSize="14sp"
+                            tools:text="--:--" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_blood_pressure_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/ll_blood_pressure"
+                    android:src="@mipmap/icon_pressure_1" />
+
+                <TextView
+                    android:id="@+id/tx_blood_pressure_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_blood_pressure_index"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:drawableLeft="@drawable/shape_square"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:text="历史记录"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_blood_pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_250"
+                    android:layout_below="@+id/tx_blood_pressure_history"
+                    android:layout_marginTop="@dimen/base_dimen_10"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/base_dimen_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tx_user_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_17"
+            android:text="用户服务"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/img_heart"
+            android:layout_toEndOf="@+id/tx_user_service"
+            android:layout_alignBottom="@+id/tx_user_service"
+            android:layout_marginLeft="@dimen/base_dimen_18"
+            android:src="@drawable/circle_green"
+            android:layout_width="@dimen/base_dimen_18"
+            android:layout_height="@dimen/base_dimen_18"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tx_user_service"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_0"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tx_healthy_cottage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/shape_square"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:gravity="center_vertical"
+                    android:text="健康小屋"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_healthy_cottage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_250"
+                    android:layout_below="@+id/tx_healthy_cottage"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:background="@color/background_color" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_0"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tx_online_consultation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/shape_square"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:gravity="center_vertical"
+                    android:text="在线问诊"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_online_consultation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_250"
+                    android:layout_below="@+id/tx_online_consultation"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:background="@color/background_color" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_0"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tx_community_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/shape_square"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:gravity="center_vertical"
+                    android:text="社区医院预约"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_community_hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_250"
+                    android:layout_below="@+id/tx_community_hospital"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:background="@color/background_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_0"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tx_top_three_hospitals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/shape_square"
+                    android:drawablePadding="@dimen/base_dimen_10"
+                    android:gravity="center_vertical"
+                    android:text="三甲医院预约"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_top_three_hospitals"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_250"
+                    android:layout_below="@+id/tx_top_three_hospitals"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:background="@color/background_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

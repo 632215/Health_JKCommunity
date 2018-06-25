@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/base_dimen_70"
+    android:layout_marginTop="@dimen/base_dimen_70"
+    android:background="@mipmap/icon_man_bg">
+
+    <TextView
+        android:id="@+id/tx_result_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_34"
+        android:layout_marginTop="@dimen/base_dimen_30"
+        android:gravity="center_horizontal"
+        android:text="体检结果（阳性结果和异常情况）"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_48" />
+
+    <ImageView
+        android:id="@+id/image_man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_result_title"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_man" />
+
+    <TextView
+        android:id="@+id/tx_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_man"
+        android:layout_marginBottom="@dimen/base_dimen_34"
+        android:layout_marginTop="@dimen/base_dimen_80"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_32"
+        tools:text="1. 体重指数增高     2. 血压较高" />
+
+    <TextView
+        android:id="@+id/tx_advice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_result"
+        android:layout_marginBottom="@dimen/base_dimen_34"
+        android:layout_marginTop="@dimen/base_dimen_30"
+        android:text="参考建议"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_32" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_advice"
+        android:layout_marginBottom="@dimen/base_dimen_34"
+        android:layout_marginTop="@dimen/base_dimen_30"
+        android:text="参考建议"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_32" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/base_dimen_46"
+    android:layout_marginTop="@dimen/base_dimen_46"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基础信息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_56" />
+
+    <TextView
+        android:id="@+id/tx_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_14"
+        android:background="@color/base_info_background_color"
+        android:paddingBottom="@dimen/base_dimen_40"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_40"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_36"
+        tools:text="ID457963      姓名：李某某      性别：男      年龄：35      地址：金科十年城46431      建档日期：2017.4.23  " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_100"
+        android:drawableLeft="@mipmap/icon_bmi"
+        android:drawablePadding="@dimen/base_dimen_44"
+        android:gravity="center_vertical"
+        android:text="BMI"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_56" />
+</LinearLayout>
